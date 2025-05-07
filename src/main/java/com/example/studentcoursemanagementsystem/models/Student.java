@@ -8,7 +8,7 @@ import java.util.Set;
 @Entity
 public class Student {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long student_id;
     private String student_name;
     private String student_email;
